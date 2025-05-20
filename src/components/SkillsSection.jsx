@@ -27,6 +27,7 @@ const skills = [
   { name: "XAMPP", level: 95, category: "tools" },
   { name: "Linux", level: 70, category: "tools" },
   { name: "Cisco Packet Tracer", level: 70, category: "tools" },
+  { name: "Vercel", level: 70, category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
