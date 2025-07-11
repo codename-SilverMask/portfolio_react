@@ -31,6 +31,16 @@ const Projects = [
     githubUrl: "https://github.com/codename-SilverMask/portfolio_react.git",
     demoUrl: "#",
   },
+  {
+    id: 4,
+    title: "Kanban Board + Annotation Tool React Vite App (Typescript)",
+    description:
+      "A Kanban board application built with React and Vite, featuring TypeScript for type safety. The app allows users to create, edit, and delete tasks, as well as annotate them with comments. It includes a drag-and-drop interface for easy task management.",
+    image: "/Projects/KanbanBoard.png",
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/codename-SilverMask/Kanban_Board_Deploy.git",
+    demoUrl: "https://kanban-board-deploy.vercel.app/",
+  },
 ];
 
 export const ProjectsSection = () => {
