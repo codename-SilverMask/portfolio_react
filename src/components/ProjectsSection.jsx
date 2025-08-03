@@ -33,13 +33,23 @@ const Projects = [
   },
   {
     id: 4,
-    title: "Kanban Board + Annotation Tool React Vite App (Typescript)",
+    title: "Kanban Board + Annotation Tool",
     description:
       "A Kanban board application built with React and Vite, featuring TypeScript for type safety. The app allows users to create, edit, and delete tasks, as well as annotate them with comments. It includes a drag-and-drop interface for easy task management.",
     image: "/Projects/KanbanBoard.png",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS"],
+    tags: ["React", "Vite", "TypeScript"],
     githubUrl: "https://github.com/codename-SilverMask/Kanban_Board_Deploy.git",
     demoUrl: "https://kanban-board-deploy.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Modern E-Commerce Storefront",
+    description:
+      "A clean, mobile-responsive and high-performance e-commerce web app built using Next.js 15 (App Router), TypeScript, and Tailwind CSS. Features dynamic product listings, responsive design, modular UI components with ShadCN, and SEO-optimized pages for fast, scalable storefront deployment.",
+    image: "/Projects/E-Store.png",
+    tags: ["NEXT.JS", "E-Commerce", "TypeScript"],
+    githubUrl: "https://github.com/codename-SilverMask/E-Store-NextJS.git",
+    demoUrl: "https://e-store-next-js-three.vercel.app/",
   },
 ];
 
