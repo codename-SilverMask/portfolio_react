@@ -51,6 +51,16 @@ const Projects = [
     githubUrl: "https://github.com/codename-SilverMask/E-Store-NextJS.git",
     demoUrl: "https://e-store-next-js-three.vercel.app/",
   },
+  {
+    id: 6,
+    title: "FlightFinder - Flight Search & Booking Web APP",
+    description:
+      "FlightFinder A modern travel booking app built with Next.js, TypeScript, and Tailwind CSS, integrating the Amadeus API to provide real-time flight and hotel search in a fast, responsive interface.",
+    image: "/Projects/FlightFinder.png",
+    tags: ["NEXT.JS", "Amadeus-API", "TypeScript"],
+    githubUrl: "https://github.com/codename-SilverMask/FlightFinder.git",
+    demoUrl: "https://flight-finder-theta.vercel.app/",
+  },
 ];
 
 export const ProjectsSection = () => {
