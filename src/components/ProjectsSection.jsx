@@ -5,7 +5,7 @@ const Projects = [
     id: 1,
     title: "SingleEvent Dynamic Website",
     description:
-      "A dynamic event website built with Laravel, showcasing a single event. Fully customizable website from the admin panel, featuring MultiCRUD systems, many-to-many relationships and fully authenticated login system for Attendees, Admins and Regular Users. ",
+      "Dynamic event website built with Laravel featuring admin customization, CRUD operations, authentication, and database relationships for comprehensive event management.",
     image: "/Projects/SingleEvent.png",
     tags: ["Laravel", "PHP", "MySQL", "Bootstrap"],
     githubUrl: "https://github.com/codename-SilverMask/EventWebsite.git",
@@ -15,7 +15,7 @@ const Projects = [
     id: 2,
     title: "Mow&Shine Cleaning Services",
     description:
-      "A static website built using Astro and OpenResty frameworks. The website is designed to showcase the services offered by Mow&Shine Cleaning Services. The website has a morder design, is fully responsive and optimized for speed and performance. ",
+      "Modern cleaning services website built with Astro and OpenResty featuring responsive design, optimized performance, and professional service showcase.",
     image: "/Projects/Mow&Shine.png",
     tags: ["Javascript", "Astro", "OpenResty"],
     githubUrl: "#",
@@ -25,7 +25,7 @@ const Projects = [
     id: 3,
     title: "Portfolio Website",
     description:
-      "Personal portfolio website built using React and Tailwind CSS. The website showcases my skills, projects, and experience. It features a clean and modern design, with sections for projects, skills, and contact information. The website is fully responsive and optimized for performance.",
+      "Personal portfolio website built with React and Tailwind CSS showcasing skills, projects, and experience with clean, responsive, and optimized design.",
     image: "/Projects/PortfolioWebsite.png",
     tags: ["React", "Tailwind CSS", "Javascript"],
     githubUrl: "https://github.com/codename-SilverMask/portfolio_react.git",
@@ -35,7 +35,7 @@ const Projects = [
     id: 4,
     title: "Kanban Board + Annotation Tool",
     description:
-      "A Kanban board application built with React and Vite, featuring TypeScript for type safety. The app allows users to create, edit, and delete tasks, as well as annotate them with comments. It includes a drag-and-drop interface for easy task management.",
+      "Task management application built with React and TypeScript featuring drag-and-drop functionality, task creation, editing, deletion, and annotation capabilities.",
     image: "/Projects/KanbanBoard.png",
     tags: ["React", "Vite", "TypeScript"],
     githubUrl: "https://github.com/codename-SilverMask/Kanban_Board_Deploy.git",
@@ -45,7 +45,7 @@ const Projects = [
     id: 5,
     title: "Modern E-Commerce Storefront",
     description:
-      "A clean, mobile-responsive and high-performance e-commerce web app built using Next.js 15 (App Router), TypeScript, and Tailwind CSS. Features dynamic product listings, responsive design, modular UI components with ShadCN, and SEO-optimized pages for fast, scalable storefront deployment.",
+      "High-performance e-commerce application built with Next.js and TypeScript featuring dynamic product listings, responsive design, and optimized user experience.",
     image: "/Projects/E-Store.png",
     tags: ["NEXT.JS", "E-Commerce", "TypeScript"],
     githubUrl: "https://github.com/codename-SilverMask/E-Store-NextJS.git",
@@ -55,7 +55,7 @@ const Projects = [
     id: 6,
     title: "FlightFinder - Flight Search & Booking Web APP",
     description:
-      "FlightFinder A modern travel booking app built with Next.js, TypeScript, and Tailwind CSS, integrating the Amadeus API to provide real-time flight and hotel search in a fast, responsive interface.",
+      "Travel booking application built with Next.js and TypeScript integrating Amadeus API for real-time flight and hotel search functionality.",
     image: "/Projects/FlightFinder.png",
     tags: ["NEXT.JS", "Amadeus-API", "TypeScript"],
     githubUrl: "https://github.com/codename-SilverMask/FlightFinder.git",
