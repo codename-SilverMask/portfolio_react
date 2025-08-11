@@ -3,36 +3,16 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const Projects = [
   {
     id: 1,
-    title: "SingleEvent Dynamic Website",
+    title: "FlightFinder - Flight Search & Booking Web APP",
     description:
-      "Dynamic event website built with Laravel featuring admin customization, CRUD operations, authentication, and database relationships for comprehensive event management.",
-    image: "/Projects/SingleEvent.png",
-    tags: ["Laravel", "PHP", "MySQL", "Bootstrap"],
-    githubUrl: "https://github.com/codename-SilverMask/EventWebsite.git",
-    demoUrl: "#",
+      "Travel booking application built with Next.js and TypeScript integrating Amadeus API for real-time flight and hotel search functionality.",
+    image: "/Projects/FlightFinder.png",
+    tags: ["NEXT.JS", "Amadeus-API", "TypeScript"],
+    githubUrl: "https://github.com/codename-SilverMask/FlightFinder.git",
+    demoUrl: "https://flight-finder-theta.vercel.app/",
   },
   {
     id: 2,
-    title: "Mow&Shine Cleaning Services",
-    description:
-      "Modern cleaning services website built with Astro and OpenResty featuring responsive design, optimized performance, and professional service showcase.",
-    image: "/Projects/Mow&Shine.png",
-    tags: ["Javascript", "Astro", "OpenResty"],
-    githubUrl: "#",
-    demoUrl: "https://mownshine.com/",
-  },
-  {
-    id: 3,
-    title: "Portfolio Website",
-    description:
-      "Personal portfolio website built with React and Tailwind CSS showcasing skills, projects, and experience with clean, responsive, and optimized design.",
-    image: "/Projects/PortfolioWebsite.png",
-    tags: ["React", "Tailwind CSS", "Javascript"],
-    githubUrl: "https://github.com/codename-SilverMask/portfolio_react.git",
-    demoUrl: "#",
-  },
-  {
-    id: 4,
     title: "Kanban Board + Annotation Tool",
     description:
       "Task management application built with React and TypeScript featuring drag-and-drop functionality, task creation, editing, deletion, and annotation capabilities.",
@@ -42,7 +22,7 @@ const Projects = [
     demoUrl: "https://kanban-board-deploy.vercel.app/",
   },
   {
-    id: 5,
+    id: 3,
     title: "Modern E-Commerce Storefront",
     description:
       "High-performance e-commerce application built with Next.js and TypeScript featuring dynamic product listings, responsive design, and optimized user experience.",
@@ -52,14 +32,34 @@ const Projects = [
     demoUrl: "https://e-store-next-js-three.vercel.app/",
   },
   {
-    id: 6,
-    title: "FlightFinder - Flight Search & Booking Web APP",
+    id: 4,
+    title: "SingleEvent Dynamic Website",
     description:
-      "Travel booking application built with Next.js and TypeScript integrating Amadeus API for real-time flight and hotel search functionality.",
-    image: "/Projects/FlightFinder.png",
-    tags: ["NEXT.JS", "Amadeus-API", "TypeScript"],
-    githubUrl: "https://github.com/codename-SilverMask/FlightFinder.git",
-    demoUrl: "https://flight-finder-theta.vercel.app/",
+      "Dynamic event website built with Laravel featuring admin customization, CRUD operations, authentication, and database relationships for comprehensive event management.",
+    image: "/Projects/SingleEvent.png",
+    tags: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+    githubUrl: "https://github.com/codename-SilverMask/EventWebsite.git",
+    demoUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Mow&Shine Cleaning Services",
+    description:
+      "Modern cleaning services website built with Astro and OpenResty featuring responsive design, optimized performance, and professional service showcase.",
+    image: "/Projects/Mow&Shine.png",
+    tags: ["Javascript", "Astro", "OpenResty"],
+    githubUrl: "#",
+    demoUrl: "https://mownshine.com/",
+  },
+  {
+    id: 6,
+    title: "Portfolio Website",
+    description:
+      "Personal portfolio website built with React and Tailwind CSS showcasing skills, projects, and experience with clean, responsive, and optimized design.",
+    image: "/Projects/PortfolioWebsite.png",
+    tags: ["React", "Tailwind CSS", "Javascript"],
+    githubUrl: "https://github.com/codename-SilverMask/portfolio_react.git",
+    demoUrl: "#",
   },
 ];
 
