@@ -7,19 +7,19 @@ const Projects = [
     description:
       "Travel booking application built with Next.js and TypeScript integrating Amadeus API for real-time flight and hotel search functionality.",
     image: "/Projects/FlightFinder.png",
-    tags: ["NEXT.JS", "Amadeus-API", "TypeScript"],
+    tags: ["Next.js", "Amadeus-API", "TypeScript"],
     githubUrl: "https://github.com/codename-SilverMask/FlightFinder.git",
     demoUrl: "https://flight-finder-theta.vercel.app/",
   },
   {
     id: 2,
-    title: "Kanban Board + Annotation Tool",
+    title: "Mow&Shine Cleaning Services",
     description:
-      "Task management application built with React and TypeScript featuring drag-and-drop functionality, task creation, editing, deletion, and annotation capabilities.",
-    image: "/Projects/KanbanBoard.png",
-    tags: ["React", "Vite", "TypeScript"],
-    githubUrl: "https://github.com/codename-SilverMask/Kanban_Board_Deploy.git",
-    demoUrl: "https://kanban-board-deploy.vercel.app/",
+      "Modern cleaning services website built with Javascript and Next.js featuring responsive design, optimized performance, and professional service showcase.",
+    image: "/Projects/Mow&Shine.png",
+    tags: ["Javascript", "Next.js", "Tailwind CSS"],
+    githubUrl: "https://github.com/codename-SilverMask/mow-and-shine.git",
+    demoUrl: "https://www.mownshine.com/",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const Projects = [
     description:
       "High-performance e-commerce application built with Next.js and TypeScript featuring dynamic product listings, responsive design, and optimized user experience.",
     image: "/Projects/E-Store.png",
-    tags: ["NEXT.JS", "E-Commerce", "TypeScript"],
+    tags: ["Next.js", "E-Commerce", "TypeScript"],
     githubUrl: "https://github.com/codename-SilverMask/E-Store-NextJS.git",
     demoUrl: "https://e-store-next-js-three.vercel.app/",
   },
@@ -43,13 +43,13 @@ const Projects = [
   },
   {
     id: 5,
-    title: "Mow&Shine Cleaning Services",
+    title: "Kanban Board + Annotation Tool",
     description:
-      "Modern cleaning services website built with Astro and OpenResty featuring responsive design, optimized performance, and professional service showcase.",
-    image: "/Projects/Mow&Shine.png",
-    tags: ["Javascript", "Astro", "OpenResty"],
-    githubUrl: "#",
-    demoUrl: "https://mownshine.com/",
+      "Task management application built with React and TypeScript featuring drag-and-drop functionality, task creation, editing, deletion, and annotation capabilities.",
+    image: "/Projects/KanbanBoard.png",
+    tags: ["React", "Vite", "TypeScript"],
+    githubUrl: "https://github.com/codename-SilverMask/Kanban_Board_Deploy.git",
+    demoUrl: "https://kanban-board-deploy.vercel.app/",
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const Projects = [
     image: "/Projects/PortfolioWebsite.png",
     tags: ["React", "Tailwind CSS", "Javascript"],
     githubUrl: "https://github.com/codename-SilverMask/portfolio_react.git",
-    demoUrl: "#",
+    demoUrl: "https://www.amaneyhussain.me/",
   },
 ];
 
