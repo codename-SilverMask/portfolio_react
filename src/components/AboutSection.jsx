@@ -13,16 +13,20 @@ export const AboutSection = () => {
               Web Developer and Tech Enthusiast
             </h3>
             <p className="text-muted-foreground">
-              I'm a full-stack developer with hands-on experience in Laravel and
-              PHP, focused on building responsive and efficient web
-              applications. I work with modern front-end tools like Bootstrap,
-              Tailwind CSS, and React.
+              Frontend developer specializing in React and Next.js, with
+              experience building responsive web applications, dashboards, and
+              interactive tools. Skilled in form handling, API integration, and
+              deployment workflows, with growing expertise in backend
+              development and full-stack solutions.
             </p>
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              Curious technologist who loves building things. From sleek web
+              apps to custom keyboards that sound as good as they feel. I prefer
+              the speed of the terminal over the mouse, and I keep an eye on
+              emerging tech that makes life smoother (or just more fun). When
+              I’m not coding, you’ll find me playing Souls games, vibing to
+              Sleep Token, or hanging out with my cat, my most reliable QA
+              tester.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -62,8 +66,9 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg"> Front End</h4>
                   <p className="text-muted-foreground">
-                    I use JavaScript, Bootstrap, Tailwind CSS and React to build
-                    responsive and user-friendly front-end interfaces.
+                    Proficient in JavaScript and TypeScript, building Next.js
+                    and Vite apps with Tailwind CSS, Bootstrap, and React
+                    (ShadCN, Framer Motion, React Bits, Lucide React)
                   </p>
                 </div>
               </div>
@@ -76,8 +81,9 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg"> Back End</h4>
                   <p className="text-muted-foreground">
-                    I use Python, PHP, Laravel, SQL, and FastAPI to build
-                    secure, scalable, and efficient backend systems.
+                    Proficient in Node.js and Next.js API routes, handling
+                    emails with Nodemailer, integrating third-party services,
+                    and building backend systems to support applications.
                   </p>
                 </div>
               </div>

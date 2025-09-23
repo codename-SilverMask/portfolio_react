@@ -19,7 +19,7 @@ export const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I'm a full-stack web developer who loves to code, build things from
+            I'm a front-end web developer who loves to code, build things from
             scratch, and work efficiently often without touching the mouse. I
             enjoy crafting fast, clean, and functional web applications from
             front to back.
