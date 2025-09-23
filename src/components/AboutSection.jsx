@@ -20,9 +20,11 @@ export const AboutSection = () => {
               development and full-stack solutions.
             </p>
             <p className="text-muted-foreground">
-              Curious technologist who loves building things. From sleek web
-              apps to custom keyboards that sound as good as they feel. I prefer
-              the speed of the terminal over the mouse, and I keep an eye on
+              Curious technologist who loves building things, from sleek web
+              apps to custom keyboards that sound as good as they feel. I enjoy
+              creating workflows and automating tasks using tools like n8n and
+              AI to make processes smarter and more efficient. I prefer the
+              speed of the terminal over the mouse, and I keep an eye on
               emerging tech that makes life smoother (or just more fun). When
               I’m not coding, you’ll find me playing Souls games, vibing to
               Sleep Token, or hanging out with my cat, my most reliable QA
