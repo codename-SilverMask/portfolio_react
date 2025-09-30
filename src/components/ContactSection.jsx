@@ -107,12 +107,27 @@ export const ContactSection = () => {
               </div>
             </div>
           </div>
-          <div
-            className="bg-card p-8 rounded-lg shadows-xs"
-            onSubmit={handleSubmit}
-          >
+          <div className="bg-card p-8 rounded-lg shadows-xs">
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-            <form action="" className="space-y-6">
+            <form
+              action="https://formsubmit.co/contact.amaneyhussain@gmail.com"
+              method="POST"
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              {/* FormSubmit hidden inputs */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://amaneyhussain.me/?success=true"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Contact"
+              />
+
               <div>
                 <label
                   htmlFor="name"
