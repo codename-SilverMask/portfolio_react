@@ -13,7 +13,7 @@ export const AboutSection = () => {
               Web Developer and Tech Enthusiast
             </h3>
             <p className="text-muted-foreground">
-              Frontend developer specializing in React and Next.js, with
+              Full-Stack Web Developer specializing in React and Next.js, with
               experience building responsive web applications, dashboards, and
               interactive tools. Skilled in form handling, API integration, and
               deployment workflows, with growing expertise in backend
