@@ -1,6 +1,8 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
+import { Github } from "@/components/icons/BrandIcons";
+import { Reveal } from "@/components/Reveal";
 
-const Projects = [
+const projects = [
   {
     id: 1,
     title: "FlightFinder - Flight Search & Booking Web APP",
@@ -65,74 +67,95 @@ const Projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          &lt;Featured <span className="text-primary">Projects/&gt;</span>
-        </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects that I have worked on. Each
-          project was carefully crafted with attention to detail, performance
-          and user experience in mind.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Projects.map((project, key) => (
-            <div
-              key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
-            >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
-                      {tag}
-                    </span>
-                  ))}
+    <section id="projects" className="py-24 relative">
+      <div className="container max-w-5xl">
+        <Reveal>
+          <p className="terminal-label mb-3">projects</p>
+          <h2 className="text-section mb-4">
+            featured_work<span className="text-primary">/</span>
+          </h2>
+          <p className="text-body text-muted-foreground mb-12 max-w-2xl text-left">
+            Here are some of my recent projects. Each one was carefully
+            crafted with attention to detail, performance, and user
+            experience.
+          </p>
+        </Reveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, index) => (
+            <Reveal key={project.id} delay={(index % 3) * 80}>
+              <div className="group panel panel-interactive corner-brackets overflow-hidden h-full flex flex-col">
+                <div className="h-44 overflow-hidden relative">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover saturate-[0.85] transition-all duration-500 group-hover:scale-105 group-hover:saturate-100"
+                  />
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent pointer-events-none"
+                    aria-hidden="true"
+                  />
+                  <span className="absolute top-3 left-3 text-xs text-primary/90 bg-background/70 backdrop-blur-sm px-2 py-0.5 rounded border border-primary/30">
+                    [{String(index + 1).padStart(2, "0")}]
+                  </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  {" "}
-                  {project.description}{" "}
-                </p>
-                <div className="flex justify-between items-center mb-1">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink />
-                    </a>
+
+                <div className="p-5 flex flex-col flex-1 text-left">
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2 py-0.5 text-[0.7rem] border border-border rounded bg-surface/80 text-muted-foreground"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <h3 className="font-semibold mb-1.5 leading-snug">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                    {project.description}
+                  </p>
+                  <div className="flex items-center gap-2 -ml-2">
+                    {project.demoUrl !== "#" && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Live demo of ${project.title}`}
+                        className="p-2.5 text-foreground/70 hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink className="h-5 w-5" />
+                      </a>
+                    )}
                     <a
                       href={project.githubUrl}
                       target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      rel="noreferrer"
+                      aria-label={`Source code of ${project.title} on GitHub`}
+                      className="p-2.5 text-foreground/70 hover:text-primary transition-colors duration-300"
                     >
-                      <Github />
+                      <Github className="h-5 w-5" />
                     </a>
                   </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
-        <div className="text-center mt-12">
+
+        <Reveal className="text-center mt-14">
           <a
-            target="_blank"
             href="https://github.com/codename-SilverMask"
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-primary"
           >
-            {" "}
-            Check my GitHub <ArrowRight size={16} />{" "}
+            check_my_github <ArrowRight size={16} />
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

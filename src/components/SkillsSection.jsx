@@ -1,87 +1,115 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { Reveal } from "@/components/Reveal";
 
-const skills = [
-  // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 70, category: "frontend" },
-  { name: "React", level: 80, category: "frontend" },
-  { name: "BootStrap", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
-
-  // Backend
-  { name: "Node.js", level: 70, category: "backend" },
-  { name: "PHP/Laravel", level: 85, category: "backend" },
-  { name: "Python/FastAPI", level: 60, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "MySQL", level: 80, category: "backend" },
-
-  // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 60, category: "tools" },
-  { name: "NGiNX", level: 60, category: "tools" },
-  { name: "AWS", level: 60, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
-  { name: "XAMPP", level: 95, category: "tools" },
-  { name: "Linux", level: 70, category: "tools" },
-  { name: "Cisco Packet Tracer", level: 70, category: "tools" },
-  { name: "Vercel", level: 70, category: "tools" },
+const skillGroups = [
+  {
+    id: "frontend",
+    label: "frontend",
+    skills: [
+      "HTML/CSS",
+      "JavaScript",
+      "React",
+      "BootStrap",
+      "Tailwind CSS",
+      "Next.js",
+    ],
+  },
+  {
+    id: "backend",
+    label: "backend",
+    skills: ["Node.js", "PHP/Laravel", "Python/FastAPI", "PostgreSQL", "MySQL"],
+  },
+  {
+    id: "ai-ml",
+    label: "ai_ml",
+    skills: ["NumPy", "Pandas", "Scikit-learn", "PyTorch", "TensorFlow"],
+  },
+  {
+    id: "tools",
+    label: "tools",
+    skills: [
+      "Git/GitHub",
+      "Docker",
+      "NGiNX",
+      "AWS",
+      "Figma",
+      "VS Code",
+      "XAMPP",
+      "Linux",
+      "Cisco Packet Tracer",
+      "Vercel",
+    ],
+  },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = [
+  { id: "all", label: "all" },
+  ...skillGroups.map(({ id, label }) => ({ id, label })),
+];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+  const visibleGroups = skillGroups.filter(
+    (group) => activeCategory === "all" || group.id === activeCategory
   );
+
   return (
-    <section id="skills" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          &lt;My <span className="text-primary"> Skills/&gt;</span>
-        </h2>
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category, key) => (
-            <button
-              key={key}
-              onClick={() => setActiveCategory(category)}
-              className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                activeCategory === category
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-foreground hover:bg-secondary"
-              )}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSkills.map((skill, key) => (
-            <div
-              key={key}
-              className="bg-card p-6 rounded-lg shadows-xs card-hover"
-            >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg">{skill.name}</h3>
+    <section id="skills" className="py-24 relative bg-surface/40">
+      <div className="container max-w-5xl">
+        <Reveal>
+          <p className="terminal-label mb-3">skills</p>
+          <h2 className="text-section mb-10">
+            tech_stack <span className="text-primary">--list</span>
+          </h2>
+        </Reveal>
+
+        <Reveal>
+          <div
+            className="flex flex-wrap gap-2.5 mb-12"
+            role="tablist"
+            aria-label="Filter skills by category"
+          >
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                role="tab"
+                aria-selected={activeCategory === category.id}
+                onClick={() => setActiveCategory(category.id)}
+                className={cn(
+                  "min-h-11 px-4 py-2 rounded-md text-sm transition-all duration-300 border",
+                  activeCategory === category.id
+                    ? "border-primary/60 bg-primary/10 text-primary shadow-[0_0_16px_-6px_hsl(var(--primary)/0.5)]"
+                    : "border-border bg-surface/60 text-muted-foreground hover:text-foreground hover:border-primary/30"
+                )}
+              >
+                {category.label}
+              </button>
+            ))}
+          </div>
+        </Reveal>
+
+        <div className="space-y-10">
+          {visibleGroups.map((group) => (
+            <Reveal key={group.id}>
+              <div className="text-left">
+                <p className="terminal-label mb-4">{group.label}</p>
+                <div className="flex flex-wrap gap-2.5">
+                  {group.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className={cn(
+                        "chip",
+                        group.id === "ai-ml" && "chip-violet"
+                      )}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className="w-full bg-secondary/50 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounder-full origin-left animate-[grow_1.5s_ease-out"
-                  style={{ width: skill.level + "%" }}
-                />
-              </div>
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {" "}
-                  {skill.level}%{" "}
-                </span>
-              </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

@@ -25,3 +25,5 @@ dist-ssr
 
 # AI instructions
 .github/copilot-instructions.md
+fable5-portfolio-redesign-prompt.md
+.claude/
