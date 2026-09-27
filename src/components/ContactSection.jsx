@@ -20,13 +20,13 @@ const contactItems = [
   {
     icon: Phone,
     label: "phone",
-    value: "+88 018 7118 3271",
-    href: "tel:+8801871183271",
+    value: "+1 (940) 354-8952",
+    href: "tel:+19403548952",
   },
   {
     icon: MapPin,
     label: "location",
-    value: "Mirpur, Dhaka, Bangladesh",
+    value: "Denton, Texas, United States",
     href: null,
   },
 ];
