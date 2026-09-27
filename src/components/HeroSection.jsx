@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowDown, MapPin } from "lucide-react";
 import { prefersReducedMotion } from "@/lib/utils";
 
-const ROLES = [
-  "Full-Stack Developer",
-  "AI / ML Engineer",
-  "Keyboard Builder",
-];
+const ROLES = ["Full-Stack Developer", "AI / ML Engineer", "Keyboard Builder"];
 
 // Types, holds, deletes, and cycles through ROLES.
 // Reduced-motion users get a static combined label instead.
@@ -34,10 +30,10 @@ const useTypedRole = () => {
           setText(
             deleting
               ? role.slice(0, text.length - 1)
-              : role.slice(0, text.length + 1)
+              : role.slice(0, text.length + 1),
           );
         },
-        deleting ? 35 : 70
+        deleting ? 35 : 70,
       );
     }
     return () => clearTimeout(timeout);
@@ -112,7 +108,7 @@ export const HeroSection = () => {
             </span>
             <span className="inline-flex items-center gap-1.5">
               <MapPin className="h-3.5 w-3.5 text-primary/70" />
-              Dhaka, Bangladesh · UTC+6
+              Denton, TX, USA (GMT-5)
             </span>
           </div>
         </div>
